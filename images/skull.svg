@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" fill="none" role="img" viewBox="0 0 128 128">
+  <title id="title">Fine-line brown skull icon</title>
+  <desc id="desc">Transparent skull outline with solid brown eyes and a lighter lower jaw line</desc>
+  <g stroke="rgb(41, 30, 14)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5">
+    <path d="M64 13C42.6 13 25.2 30.4 25.2 51.8c0 14 7.6 26.4 19.2 33v10.1c0 3.8 3.1 6.9 6.9 6.9h25.4c3.8 0 6.9-3.1 6.9-6.9V84.8c11.6-6.6 19.2-19 19.2-33C102.8 30.4 85.4 13 64 13Z"/>
+    <ellipse cx="48.5" cy="53" fill="rgb(41, 30, 14)" rx="10" ry="14" stroke="none"/>
+    <ellipse cx="79.5" cy="53" fill="rgb(41, 30, 14)" rx="10" ry="14" stroke="none"/>
+    <path d="M64 66.2 58.3 75.4h11.4L64 66.2Z"/>
+    <path d="M48 83.3v11.1c0 2.1 1.7 3.9 3.9 3.9h24.2c2.1 0 3.9-1.7 3.9-3.9V83.3" stroke-width="2.5"/>
+    <path d="M55.5 84.8v10M64 84v12M72.5 84.8v10" stroke-width="2.5"/>
+  </g>
+</svg>

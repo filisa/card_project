@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Chewy", Arial;
+}
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#page_title {
+    color: #efe2ce;
+    background-color: #b58757;
+    margin: 5px auto;
+    padding: 5px 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+#main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* card with the mushroom info */
+.card {
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    width: clamp(180px, 45vw, 500px);
+    padding: 8px;
+    background-color: #efe2ce;
+    font-size: 1vw;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* title on the mushroom card */
+.card__title {
+    font-size: 5vw;
+    color: #b58757;
+    margin: 0;
+    padding: 0;
+}
+
+/* photo of the mushroom */
+.card__image {
+    height: 30vw;
+    width: 22vw;
+}
+
+/* this is the small skull or fork image at the top left of the card */
+.card__edible, .card__inedible {
+    height: 6vw;
+    align-self: flex-start;
+    width: 6vw;
+    margin: 0;
+    padding: 0;
+}
+
+.card__subtitle {
+    font-size: 2vw;
+    margin: 0 0 0.09rem 0;
+    padding: 0;
+}
+
+.card__paragraph {
+    font-size: 1vw;
+    margin: 0 0 0.09rem 0;
+    padding: 0;
+}
+footer {
+    font-size: 1vw;
+}
