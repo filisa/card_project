@@ -18,10 +18,10 @@ html, body {
     width: fit-content;
 }
 
-#main_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 /* card with the mushroom info */
@@ -29,8 +29,9 @@ html, body {
     display: flex;
     flex-direction: column;
     height:fit-content;
-    width: clamp(180px, 45vw, 500px);
+    /* width: clamp(180px, 45vw, 800px); */
     padding: 8px;
+    margin: 20px;
     background-color: #efe2ce;
     font-size: 1vw;
     border-radius: 10px;
@@ -49,8 +50,8 @@ html, body {
 
 /* photo of the mushroom */
 .card__image {
-    height: 30vw;
-    width: 22vw;
+    height: 20vw;
+    width: 18vw;
 }
 
 /* this is the small skull or fork image at the top left of the card */
@@ -66,6 +67,7 @@ html, body {
     font-size: 2vw;
     margin: 0 0 0.09rem 0;
     padding: 0;
+    color: #be350a;
 }
 
 .card__paragraph {
