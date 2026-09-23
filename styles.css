@@ -76,7 +76,7 @@ html, body {
 .card {
     display: flex;
     flex-direction: column;
-    padding: 5vw 4vw;
+    padding: 2vw 3vw;
     background-color: #efe2ce;
     border-radius: 10px;
     justify-content: flex-start;
@@ -87,8 +87,9 @@ html, body {
 }
 
 .card:hover {
-    box-shadow: 2px 2px 15px #b49e86;
+    box-shadow: 2px 2px 15px #a88d70;
     border-radius: 10px;
+    background-color: #dccbb3;;
 }
 
 /* photo of the mushroom */
