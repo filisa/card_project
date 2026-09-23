@@ -2,8 +2,41 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Chewy", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: clamp(15px, 6vw, 40px)
+    font-size: clamp(20px, 6vw, 50px)
 }
+
+/* for mobile */
+@media (min-width: 200px) and (max-width: 400px) {
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1  fr);
+    grid-template-rows: repeat(6, 0.7fr);
+    gap: 4vw;
+    padding: 5vw;
+    }
+
+}
+/* for tablet and desktop */
+@media (min-width: 401px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 0.4fr);
+        gap: 1vw;
+        justify-content: space-between;
+        padding: 2vw;
+    }
+    /* grid items can span 2 columns only on desktop */
+    .span_2columns {
+    grid-column: span 2;
+    }
+
+    /* grid items can span 2 rows only on desktop */
+    .span_2rows {
+        grid-row: span 2 / span 2;
+    }
+}
+
 .chewy-regular {
   font-family: "Chewy", system-ui;
   font-weight: 400;
@@ -13,51 +46,44 @@ html, body {
 #page_title {
     color: #efe2ce;
     background-color: #b58757;
-    margin: 5px auto;
+    margin: 1vw auto;
     padding: 5px 5px;
     border-radius: 10px;
     width: fit-content;
     font-size: 1em;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 0.8fr 0.8fr 0.8fr;
-    grid-template-rows: 0.8fr 0.8fr 0.8fr;
-    gap: 0.5vw;
-    justify-content: space-between;
-}
 
 /* card with the mushroom info */
 .card {
     display: flex;
     flex-direction: column;
-    /* height: 40vw; */
-    padding: 1vw 0.7vw;
+    padding: 5vw 4vw;
     background-color: #efe2ce;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
+    /* margin: 0 2vw; */
 }
 
 .card:hover {
-    border: 3.5px solid #b58757;
+    box-shadow: 2px 2px 15px #b49e86;
     border-radius: 10px;
 }
 
 /* photo of the mushroom */
 .card__image {
-    height: clamp(2vw, 20vw, 150px);
-    width: clamp(1vw, 15vw, 150px);
+    height: clamp(200px, 25vw, 1000px);
+    width: clamp(180px, 22vw, 980px);
 }
 
 /* this is the small skull or fork image at the top left of the card */
 .card__edible, .card__inedible {
-    display: block;
+    display: none;
     position: relative; 
-    top: 0px;
-    right: 3vw;
+    top: 0.5vw;
+    left: 0.5vw;
     height: 4vw;
     width: 4vw;
     margin: 0;
@@ -97,21 +123,11 @@ footer {
 .footer__img {
     width: clamp(10px, 2vw, 25px);
 }
-
+/* 
 .span_2columns {
     grid-column: span 2;
 }
 
 .span_2rows {
     grid-row: span 2 / span 2;
-}
-
-.image_margin_bottom_increased {
-    .card__image {
-    margin-bottom: 50px;
-}
-}
-
-.padding_increased {
-    padding: 28px;
-}
+} */
