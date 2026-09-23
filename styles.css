@@ -36,6 +36,9 @@ html, body {
     .span_2columns {
     grid-column: span 2;
     }
+    .span_3columns {
+    grid-column: span 3;
+    }
 
     /* grid items can span 2 rows only on desktop */
     .span_2rows {
@@ -95,7 +98,7 @@ html, body {
 }
 
 /* this is the small skull or fork image at the top left of the card */
-.card__edible, .card__inedible {
+.card__edible-or-not {
     display: block;
     align-self: flex-start;
     opacity: 0.3;
