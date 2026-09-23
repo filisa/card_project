@@ -143,11 +143,7 @@ footer {
 .footer__img {
     width: clamp(10px, 2vw, 25px);
 }
-/* 
-.span_2columns {
-    grid-column: span 2;
-}
 
-.span_2rows {
-    grid-row: span 2 / span 2;
-} */
+#licence {
+    font-size: 0.5rem;
+}
