@@ -16,33 +16,40 @@ html, body {
     padding: 5px 5px;
     border-radius: 10px;
     width: fit-content;
+    font-size: 4vw;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr;
+    gap: 0.5vw;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 /* card with the mushroom info */
 .card {
     display: flex;
     flex-direction: column;
-    height:fit-content;
-    /* width: clamp(180px, 45vw, 800px); */
-    padding: 8px;
-    margin: 20px;
+    /* height: 40vw; */
+    padding: 1vw 0.7vw;
     background-color: #efe2ce;
     font-size: 1vw;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
+.card:hover {
+    border: 3.5px solid #b58757;
+    border-radius: 10px;
+}
 
 /* title on the mushroom card */
 .card__title {
-    font-size: 5vw;
+    font-size: 3vw;
     color: #b58757;
     margin: 0;
     padding: 0;
@@ -50,15 +57,18 @@ html, body {
 
 /* photo of the mushroom */
 .card__image {
-    height: 20vw;
-    width: 18vw;
+    height: 16vw;
+    width: 15vw;
 }
 
 /* this is the small skull or fork image at the top left of the card */
 .card__edible, .card__inedible {
-    height: 6vw;
-    align-self: flex-start;
-    width: 6vw;
+    display: block;
+    position: relative; 
+    top: 0px;
+    right: 6vw;
+    height: 4vw;
+    width: 4vw;
     margin: 0;
     padding: 0;
 }
@@ -76,5 +86,28 @@ html, body {
     padding: 0;
 }
 footer {
-    font-size: 1vw;
+    font-size: 2vw;
+    padding: 20px;
+}
+
+.footer__img {
+    width: clamp(10px, 2vw, 25px);
+}
+
+.span_2columns {
+    grid-column: span 2;
+}
+
+.span_2rows {
+    grid-row: span 2 / span 2;
+}
+
+.image_margin_bottom_increased {
+    .card__image {
+    margin-bottom: 50px;
+}
+}
+
+.padding_increased {
+    padding: 28px;
 }
