@@ -145,6 +145,8 @@ footer {
 
 .footer__img {
     width: clamp(10px, 2vw, 25px);
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 #licence {
